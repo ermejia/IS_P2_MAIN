@@ -16,7 +16,7 @@ pipeline{
                 )
                 rtMavenRun(
                     pom: 'pom.xml',
-                    goals: 'install',
+                    goals: 'package',
                     deployerId: 'IS_P2_MAIN'
                 )
 
@@ -26,7 +26,7 @@ pipeline{
         stage ("Artifactory Information") {
             steps{
                 rtPublishBuildInfo (
-                    serverId: "Artifactory"
+                    serverId: "artifactory"
                 )
             }
         }
