@@ -23,12 +23,5 @@ pipeline{
                     echo "-----Deploying Finished-----"
             }
         }
-        stage ("Artifactory Information") {
-            steps{
-                rtPublishBuildInfo (
-                    serverId: "artifactory"
-                )
-            }
-        }
     }
 }
