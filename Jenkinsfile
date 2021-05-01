@@ -1,6 +1,4 @@
-pipeline{
-    agent any
-    node{
+node{
         def server = Artifactory.server 'Artifactory'
         stages{
             stage("Upload Artifact"){
@@ -34,4 +32,3 @@ pipeline{
             }
         }
     }
-}
