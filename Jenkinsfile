@@ -1,5 +1,5 @@
 node{
-        def server = Artifactory.server 'Artifactory'
+        def server = Artifactory.server 'artifactory'
         stages{
             stage("Upload Artifact"){
                         environment{
