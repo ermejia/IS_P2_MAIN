@@ -16,7 +16,7 @@ pipeline{
                 )
                 rtMavenRun(
                     pom: 'pom.xml',
-                    goals: 'package',
+                    goals: 'install',
                     deployerId: 'IS_P2_MAIN'
                 )
 
